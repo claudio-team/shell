@@ -2,3 +2,6 @@
 ----------------------------------
 date --set="23 June 1988 10:00:00" 
 or date -s "23 June 1988 10:00:00"  
+
+2. create simble link
+ln -s /var/www/public_html/benq /home/claudio/benq
