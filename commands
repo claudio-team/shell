@@ -9,3 +9,6 @@ du -sh /home
 3. show website content
 lynx http://www.silksoftware.com
 or w3m http://www.silksoftware.com
+
+4. create simble link
+ln -s /var/www/public_html/benq /home/claudio/benq
