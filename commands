@@ -4,16 +4,29 @@ date --set="23 June 1988 10:00:00"
 or date -s "23 June 1988 10:00:00"  
 
 2. find out size of dir and subdir
+----------------------------------
 du -sh /home
 
 3. show website content
+---------------------------------
 lynx http://www.silksoftware.com
 or w3m http://www.silksoftware.com
 
 4. create simble link
+---------------------------------
 ln -s /var/www/public_html/benq /home/claudio/benq
 
 5. standard input(STDIN, 0)/output(STDOUT, 1)/error(STDERROR, 2)
+-------------------------------------------------------------------
 ls abc.php 1>correct.log 2>error.log
 ls *.txt>log 1>&2, print correct return value diretly like error value
 ls *.txt>log 2>&1, write to error value to log  diretly like correct value
+
+6. dig querty dns info
+dig www.upperdrawer.com
+
+7. make random password
+-------------------------
+< /dev/urandom tr -dc _A-Z-a-z-0-9#@~! | head -c6
+
+
