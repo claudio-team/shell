@@ -29,4 +29,16 @@ dig www.upperdrawer.com
 -------------------------
 < /dev/urandom tr -dc _A-Z-a-z-0-9#@~! | head -c6
 
+8. query count of file in current dir
+-------------------------------------
+ls -l | grep "^-" | wc -l
+query count of file in current dir and subcategories
+find ./ -type f | wc -l
 
+9. query repeating rows
+----------------------------
+cat sku.txt|uniq -d
+query uniq rows
+cat sku.txt|uniq -u
+-c show count
+ex: cat sku.txt|uniq -dc
