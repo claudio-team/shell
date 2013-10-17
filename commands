@@ -42,3 +42,11 @@ query uniq rows
 cat sku.txt|uniq -u
 -c show count
 ex: cat sku.txt|uniq -dc
+
+
+10. query sys command error log
+vim /var/spool/mail/username   //username is your login account, ex: root
+ 
+
+11. exclude some dirs to compress
+tar -zcvf abc.tar.gz --exclude=html/blog --exclude=html/blog html
