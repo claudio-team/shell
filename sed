@@ -29,3 +29,5 @@ sed 's/love//g' file //remove 'love' from all lines
 
 7. will change current file with opion '-i' 
 sed -i '$a bye' file //add 'bye' after the last line, NOTE: this will be wrote in origin file
+
+8. sed test
