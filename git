@@ -1,0 +1,21 @@
+1). How do I make git ignore mode changes (chmod)?
+    git config core.fileMode false
+2). diff file 
+    git diff filename     //diff work file with stage
+    git diff --cached filename //diff state file  with HEAD
+    git diff HEAD filename // diff work file with HEAD 
+3). revert changes
+    git reset HEAD filename,  restore to HEAD from staged
+    git checkout -- filename, restore work changes
+4). show log
+    git show HEAD or git show ,view changes in the lastest version
+    git show HEAD^ ,view changes in the version before latest version
+    git show HEAD^^^, git show HEAD~4, git show HEAD~5, ....
+5). diff & export diff files as zip
+    git diff HEAD HEAD^^ --name-only|xargs zip printers.zip
+6). git blame filename  //view change detail by all authors, so that investgate blame
+7). git commit  -C HEAD -a --amend //add commit to last rev and use the same message
+8). git commit --amend  //change commit message of last rev
+9). 
+
+
