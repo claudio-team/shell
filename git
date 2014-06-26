@@ -16,6 +16,9 @@
 6). git blame filename  //view change detail by all authors, so that investgate blame
 7). git commit  -C HEAD -a --amend //add commit to last rev and use the same message
 8). git commit --amend  //change commit message of last rev
-9). 
+9).
+git pull --no-ff                 # 抓取远程仓库所有分支更新并合并到本地，不要快进合并
+git fetch origin                 # 抓取远程仓库更新
+git merge origin/master          # 将远程主分支合并到本地当前分支 
 
 
