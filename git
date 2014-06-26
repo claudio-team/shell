@@ -19,6 +19,7 @@
 9).
 git pull --no-ff                 # 抓取远程仓库所有分支更新并合并到本地，不要快进合并
 git fetch origin                 # 抓取远程仓库更新
+git log -p master..origin/master # 比较本地和更新分支的差异 
 git merge origin/master          # 将远程主分支合并到本地当前分支 
 
 
